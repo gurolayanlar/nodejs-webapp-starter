@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <base href="/" />
+    <meta name="googlebot" content="all" />
+    <meta name="robots" content="all" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{description}}">
+    <meta name="theme-color" content="#ffffff">
+    <title>{{ title}}</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preload" href="lib/bootstrap/dist/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    </noscript>
+    <link rel="preload" href="css/site.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/site.css">
+    </noscript>
+</head>
+
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        {{> nav}} {{{body}}} {{> footer}}
+    </div>
+
+    <script defer src="lib/bootstrap/assets/js/vendor/jquery-slim.min.js"></script>
+    <script defer src="lib/bootstrap/assets/js/vendor/popper.min.js"></script>
+    <script defer src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('js/sw.js');
+            });
+        }
+    </script>
+
+</body>
+
+</html>

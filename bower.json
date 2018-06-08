@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-webapp-starter",
+  "description": "NodeJS Web Application Starter",
+  "main": "index.js",
+  "authors": [
+    "Gürol Ayanlar <gurolayanlar@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "handlebars"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./src/assets/lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "fontawesome": "^5.0.13"
+  }
+}

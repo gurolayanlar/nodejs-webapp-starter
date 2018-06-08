@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-webapp-starter",
+  "version": "1.0.0",
+  "description": "NodeJS Web Application Starter",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index",
+    "start:prod": "NODE_ENV=production && node src/index"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "handlebars"
+  ],
+  "engines": {
+    "node": ">=8.11.2",
+    "npm": ">=5.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gurolayanlar/nodejs-webapp-starter.git"
+  },
+  "author": "Gürol Ayanlar <gurolayanlar@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "helmet": "^3.12.1",
+    "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
